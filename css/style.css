@@ -84,8 +84,10 @@ top: 17px;
    height: 28px;
 }
 .element{
-  float: left;
-  width: 75%;
+ float: left;
+width: 75%;
+height: 22px;
+font-size: 18px;
 }
 .pageplus{
   padding: 14px 0px 0px 12px;
