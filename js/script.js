@@ -14,18 +14,23 @@ jQuery(document).ready(function(){
 		jQuery('#search-txt').val('');
 		jQuery('#search-txt').trigger('keypress');
 	});    
-    jQuery('.deleteme').click(function(e){                              
-        var check = confirm("Are you sure you want to delete?");
-        if(check){
-            jQuery(this).closest('.ui-state-default').remove();
-        }
+    jQuery('.deleteme').click(function(e){        
+       var count= $( "ul#sortable li" ).length
+        if(count > 1){
+            var check = confirm("Are you sure you want to delete?");
+            if(check){
+                jQuery(this).closest('.ui-state-default').remove();
+            }
+        }else{
+            alert("You can't delete all items");
+        }        
     });    
     jQuery('#additem').click(function(){
          var panel = prompt("Enter the name of the panel", "");
         panel = jQuery.trim(panel);
             if (panel!="") {
                 $("ul#sortable")  
-                .find('li:first') 
+                .find('li:last') 
                 .clone()  
                 .find('.element')  
                 .text(panel)  
