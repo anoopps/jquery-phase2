@@ -1,0 +1,53 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<title>Phase1: HTML, CSS, jQuery</title>
+ <meta charset="UTF-8"> 
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+$( function() {
+ $( "#sortable" ).sortable();
+ $( "#sortable" ).disableSelection();
+} );
+</script>
+</head>
+<body>
+<table width="100%" height="100%" border="0">
+    <tr>
+        <td width="25%">
+            <div>Pages<a href="javascript:void(0)" id="additem">Plus</a></div>
+            <ul id="sortable">
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>
+            <div class="element">Shared Plesk</div>
+            </li>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>
+           <div class="element">Shared Plesk</div>
+            </li>
+            <li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>
+           <div class="element">test</div>
+            </li>
+            </ul>
+        </td>
+        <td>
+            
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div class="footer-search">
+                <span>Filter :</span>
+                <span>
+                    <input type="text" name="search-txt" id="search-txt"> 
+                </span>
+            </div>
+            
+        </td>
+        <td></td>
+    </tr>
+</table> 
+<script src="js/script.js"></script>
+</body>
+</html> 
