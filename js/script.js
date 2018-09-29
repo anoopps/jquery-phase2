@@ -5,14 +5,13 @@ jQuery(document).ready(function(){
     
     jQuery('#search-txt').bind( "keypress keyup", function() {        
 		var searchtxt = jQuery(this).val().toLowerCase();
-        jQuery('.clear').show();
-    
+		jQuery('.clear').show();
 			jQuery('ul#sortable > li').hide();		
 			var items = jQuery('ul#sortable > li');	    
 			jQuery.each(items,function(index, node){				    
 				  var heading = jQuery(node).find(".element").text().toLowerCase();
 				  if ( heading.toLowerCase().indexOf(searchtxt) >= 0  ){
-					   jQuery(node).closest('li').css("display","block");
+					   jQuery(node).closest('li').css("display","block");						
 				    }
 			})	
 	});
@@ -56,6 +55,6 @@ jQuery(document).ready(function(){
         jQuery('.tabspane > div').hide();
         jQuery(tab).show();
         event.preventDefault();
-    });
+    });	
 });
 	
