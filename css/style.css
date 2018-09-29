@@ -77,16 +77,17 @@ top: 17px;
 }
 .deleteme{
   float: left;
-  width: 9px;
-  height: 31px;
+  width: 18px;
+  /*! height: 31px; */
   background-image: url(../images/delete.png);
   background-repeat: no-repeat;
   overflow: hidden;
   text-indent: 999px;
-  padding: 4px;
-  position: absolute;
+  padding-top: 4px;
+  /*! position: absolute; */
   background-position: 2px 4px;
-  right: 31px;
+  /*! right: 28px; */
+  padding-left: 0;
 }
 .checkboxfld{
    float: left;
@@ -162,4 +163,13 @@ a {
 .ui-sortable-helper{
    background-color: #454545!important;
    color: #fff!important;
+}
+@media only screen and (max-width: 600px) {
+   .element{
+      float: left;
+      width: 50%;
+      height: 20px;
+      font-size: 18px;
+      font-size: 12px!important;
+     }       
 }
